@@ -1,0 +1,44 @@
+.heroa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.diva {
+  text-align: center;
+}
+
+.h1a {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.pa {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.cta {
+  color: white;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  background-color: #666;
+}
+
+.imga {
+  width: 300px;
+  height: auto;
+  margin-left: 40px;
+}

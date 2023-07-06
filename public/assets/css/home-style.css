@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.bg{
+    background-image: url('../images/bg2.png');
+    background-size: cover;
+}
+
+.btnh {
+    height: 55px;
+    background: rgba(76, 68, 182, 0.808);
+    border-radius: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+
+.btnh:hover {
+    opacity: 0.82;
+}
+
+
+/********* HOME *********/
+
+.navh {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 60px;
+    z-index: 100;
+
+}
+
+.logoh {
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.logoh a.ah {
+    text-decoration: none;
+    color: #000;
+}
+
+.main {
+    color: aqua;
+    margin-left: 1000px;
+    margin-top: 100px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.main-box .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btna {
+ display: inline-block;
+ width: 150px;
+ height: 50px;
+ border-radius: 10px;
+ border: 1px solid #03045e;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.5s ease-in;
+ z-index: 1;
+}
+
+.btna::before,
+.btna::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ width: 0;
+ height: 100%;
+ transform: skew(15deg);
+ transition: all 0.5s;
+ overflow: hidden;
+ z-index: -1;
+}
+
+.btna::before {
+ left: -10px;
+ background: #240046;
+}
+
+.btna::after {
+ right: -10px;
+ background: #5a189a;
+}
+
+.btna:hover::before,
+.btna:hover::after {
+ width: 58%;
+}
+
+.btna:hover span {
+ color: #e0aaff;
+ transition: 0.3s;
+}
+
+.btna span {
+ color: #03045e;
+ font-size: 18px;
+ transition: all 0.3s ease-in;
+}
+
+@media only screen and (max-width:840px) {
+    .main-box .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top .box {
+        margin: 10px 10px;
+    }
+
+    .bottom {
+        margin-top: 0;
+    }
+}
+
+.message {
+    text-align: center;
+    background: #f9eded;
+    padding: 15px 0px;
+    border: 1px solid #699053;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: red;
+}
